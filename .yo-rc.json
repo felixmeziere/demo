@@ -1,0 +1,6 @@
+{
+  "generator-rn-toolbox": {
+    "advanced-base": true,
+    "fastlane": true
+  }
+}

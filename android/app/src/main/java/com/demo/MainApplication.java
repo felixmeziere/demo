@@ -3,6 +3,7 @@ package com.demo;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.RNRSA.RNRSAPackage;
 import com.airbnb.android.react.lottie.LottiePackage;
 import com.microsoft.codepush.react.CodePush;
 import com.microsoft.appcenter.reactnative.crashes.AppCenterReactNativeCrashesPackage;
@@ -36,6 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNRSAPackage(),
             new LottiePackage(),
             new CodePush(null, getApplicationContext(), BuildConfig.DEBUG),
             new AppCenterReactNativeCrashesPackage(MainApplication.this, getResources().getString(R.string.appCenterCrashes_whenToSendCrashes)),
